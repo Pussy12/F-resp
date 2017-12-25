@@ -1,0 +1,248 @@
+ASSIGNMENT:
+===========
+
+student grade:
+---------------
+
+
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter value:");
+		int  n=sc.nextInt();
+	   if(100>=n && n>=90) {
+			System.out.println("S grade");
+			}
+	   else if(89>=n && n>=80){
+			System.out.println("A grade");
+
+			}
+	   else if(79>=n && n>=70){
+			System.out.println("B grade");
+
+	   }
+	   else if(69>=n && n>=60){
+		   System.out.println("C grade");
+	   }
+
+	   else if(59>=n){
+		   System.out.println("Fail");
+	   }
+
+
+	}
+
+
+
+prime number:
+-------------
+
+
+	public static void main(String[] args) {
+		int count;
+		for (int i = 1; i <= 100; i++) {
+			count = 0;
+			for (int j = 2; j <= i / 2; j++) {
+				if (i % j == 0) {
+					count++;
+					break;
+				}
+
+			}
+			if (count == 0) {
+				System.out.println(i);
+			}
+
+		}
+	}
+
+
+cube series:
+------------
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter integer:");
+		int  n=sc.nextInt();
+		System.out.println("you entered:");
+		int a=0;
+				for(int i=1;i<=n;i++){
+					a=a+(i*i*i);
+				}
+System.out.println(a);
+	}
+
+
+
+Polindrome numbers:
+-------------------
+
+public class PolyndromeNumbers {
+	public static void main(String[] args) {
+		
+		int n, a, i=0, j=0;
+		Scanner an=new Scanner(System.in);
+		System.out.println("Enter a number");
+		n=an.nextInt();
+		a=n;
+		while(a>0)
+		{
+			i=a%10;
+			j=(j*10)+i;
+			a=a/10;
+			
+		}if(n==j){
+			System.out.println("polyndrome");
+		}else{
+			System.out.println("Not polyndrome Number");
+		}
+		
+	}
+
+}
+
+Output:
+
+Enter a number
+
+12321
+polyndrome
+
+Factorial numbers:
+-------------------
+
+public class FactorialNumbers {
+
+	public static void main(String[] args) {
+		int count=1;
+		for(int i=1;i<=8;i++){
+			count=count*i;
+		}System.out.println(count);
+		
+	}
+}
+
+
+output:
+
+40320
+
+Fibanacci numbers:
+-------------------
+
+public class Fibanacci {
+	public static void main(String[] args) {
+		int a = 0, b = 1;
+		 System.out.println(a);
+		 System.out.println(b);
+		for (int i = 2; i <= 20; i++) {
+			int c = a + b;
+			System.out.println(c);
+			a = b;
+			b = c;
+
+		}
+	}
+
+}
+
+output:
+
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+1597
+2584
+4181
+6765
+
+Armstrong Numbers:
+-------------------
+
+public class ArmstrongNumbers {
+public static void main(String[] args) {
+	
+	int n, a, i=0, j=0;
+	Scanner an=new Scanner(System.in);
+	System.out.println("Enter a number");
+	n=an.nextInt();
+	a=n;
+	while(a>0)
+	{
+		i=a%10;
+		j=j+(i*i*i);
+		a=a/10;
+		
+	}if(n==j){
+		System.out.println("Armsrong Number");
+	}else{
+		System.out.println("Not armstrong Number");
+	}
+	
+}
+
+}
+
+output:
+
+Enter a number
+153
+Armsrong Number
+
+
+Sum of even numbers:
+---------------------
+
+public class SumofEvenNum {
+public static void main(String[] args) {
+	int count=0;
+	for(int i=1;i<=100;i++)
+	{
+		if(i%2==0){
+			count=count+i;
+			
+		}
+	}
+	System.out.println(count);
+}
+}
+
+
+output:
+
+2550
+
+sum of odd numbers:
+------------------
+
+public class SumofOddNum {
+public static void main(String[] args) {
+	int count=0;
+	for(int i=1;i<=100;i++)
+	{
+		if(i%2==1){
+			count=count+i;
+		}
+	}
+	System.out.println(count);
+}
+}
+
+
+output:
+
+2500
